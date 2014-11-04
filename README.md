@@ -2,7 +2,7 @@ trimean
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Compute module to find the trimean for an array of numeric values.
+> Compute module to find the [trimean](http://en.wikipedia.org/wiki/Trimean) for an array of numeric values.
 
 
 ## Installation
@@ -19,18 +19,42 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var foo = require( 'compute-trimean' );
+var trimean = require( 'compute-trimean' );
 ```
 
-#### foo( arr )
+#### trimean( arr[, opts] )
 
-What does this function do?
+Computes the trimean of a numeric `array`.
+
+``` javascript
+var unsorted = [ 5, 8, 9, 1, 7, 6, 2 ];
+
+var tri = trimean( unsorted );
+// returns 5.5
+```
+
+If the input `array` is already `sorted` in __ascending__ order, set the `sorted` options flag to `true`.
+
+``` javascript
+var sorted = [ 1, 2, 5, 6, 7, 8, 9 ];
+
+var tri = trimean( sorted, {'sorted': true} );
+// returns 5.5
+```
+
+Additional options are the same as for the [quantile](https://github.com/compute-io/quantile) module.
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-trimean' );
+var data = new Array( 100 );
+
+for ( var i = 0; i < data.length; i++ ) {
+    data[ i ] = Math.round( Math.random()*100 );
+}
+
+console.log( trimean( data ) );
 ```
 
 To run the example code from the top-level application directory,

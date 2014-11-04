@@ -10,7 +10,12 @@
     {
       "name": "Rebekah Smith",
       "email": "rebekahjs17@gmail.com"
+    },
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
     }
+
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha",
@@ -25,12 +30,23 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "trimean",
+    "stats",
+    "statistics",
+    "maths",
+    "mathematics",
+    "TM",
+    "Tukey's trimean",
+    "average"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/trimean/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "compute-quantile": "^1.0.0",
+    "validate.io-object": "^1.0.0"
+    },
   "devDependencies": {
     "chai": "1.x.x",
     "mocha": "1.x.x",
