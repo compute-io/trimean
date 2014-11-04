@@ -44,7 +44,7 @@ var tri = trimean( sorted, {'sorted': true} );
 // returns 5.5
 ```
 
-Additional options are the same as for the [quantile](https://github.com/compute-io/quantile) module and apply __only__ when computing the first and third quartiles.
+Additional options are the same as for the [quantile](https://github.com/compute-io/quantile) module and __only__ apply when computing the first and third quartiles.
 
 
 ## Examples
