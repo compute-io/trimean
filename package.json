@@ -15,7 +15,6 @@
       "name": "Athan Reines",
       "email": "kgryte@gmail.com"
     }
-
   ],
   "scripts": {
     "test": "./node_modules/.bin/mocha",
@@ -34,19 +33,23 @@
     "trimean",
     "stats",
     "statistics",
-    "maths",
+    "math",
     "mathematics",
     "TM",
     "Tukey's trimean",
-    "average"
+    "average",
+    "central tendency",
+    "median",
+    "midhinge"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/trimean/issues"
   },
   "dependencies": {
+    "compute-median": "^1.1.0",
     "compute-quantile": "^1.0.0",
     "validate.io-object": "^1.0.0"
-    },
+  },
   "devDependencies": {
     "chai": "1.x.x",
     "mocha": "1.x.x",

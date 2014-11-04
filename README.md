@@ -1,4 +1,4 @@
-trimean
+Trimean
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
@@ -42,7 +42,7 @@ var tri = trimean( sorted, {'sorted': true} );
 // returns 5.5
 ```
 
-Additional options are the same as for the [quantile](https://github.com/compute-io/quantile) module.
+Additional options are the same as for the [quantile](https://github.com/compute-io/quantile) module and apply __only__ when computing the first and third quartiles.
 
 
 ## Examples

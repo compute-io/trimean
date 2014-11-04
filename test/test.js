@@ -25,14 +25,14 @@ describe( 'compute-trimean', function tests() {
 
 	it( 'should throw an error if provided a non-array', function test() {
 		var values = [
-					'5',
-					5,
-					true,
-					undefined,
-					null,
-					NaN,
-					function(){},
-					{}
+			'5',
+			5,
+			true,
+			undefined,
+			null,
+			NaN,
+			function(){},
+			{}
 		];
 
 		for ( var i = 0; i < values.length; i++ ) {
@@ -49,14 +49,14 @@ describe( 'compute-trimean', function tests() {
 
 	it( 'should throw an error if provided options is not an object', function test() {
 		var values = [
-					'5',
-					5,
-					[],
-					undefined,
-					null,
-					NaN,
-					function(){},
-					true
+			'5',
+			5,
+			[],
+			undefined,
+			null,
+			NaN,
+			function(){},
+			true
 		];
 
 		for ( var i = 0; i < values.length; i++ ) {
@@ -90,7 +90,7 @@ describe( 'compute-trimean', function tests() {
 		assert.strictEqual( trimean( data, {'sorted': true} ), expected );
 
 		// Quartile indices are integers
-		// 
+		//
 		data = [ 1, 2, 5, 6, 7, 8, 8, 9 ];
 		expected = 6.125;
 
