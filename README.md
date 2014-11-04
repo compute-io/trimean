@@ -4,6 +4,8 @@ Trimean
 
 > Compute module to find the [trimean](http://en.wikipedia.org/wiki/Trimean) for an array of numeric values.
 
+The trimean (or Tukey's trimean) is defined as the weighted average of a distribution's median and its two quartiles. The statistic measures a probability distribution's location and is a statistically resistant L-estimator, having a breakdown point of 25%. The statistic combines the robustness of the median, while accounting for a distribution's shape.
+
 
 ## Installation
 
